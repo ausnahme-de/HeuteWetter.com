@@ -1,8 +1,0 @@
-# robots.txt – HeuteWetter
-# Allow all web crawlers to index the entire site.
-
-User-agent: *
-Allow: /
-
-# Sitemap location
-Sitemap: https://heute-wetter.de/sitemap.xml
