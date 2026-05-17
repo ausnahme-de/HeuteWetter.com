@@ -1,7 +1,6 @@
 # ⛅ Heute Wetter
 
-A production-ready German weather platform built to compete with wetter.com, wetteronline, and DWD.
-Mobile-first, SEO-optimized, premium UI, zero API keys.
+
 
 ---
 
