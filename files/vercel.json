@@ -1,0 +1,39 @@
+{
+  "rewrites": [
+    { "source": "/wetter/berlin",      "destination": "/?city=Berlin" },
+    { "source": "/wetter/hamburg",     "destination": "/?city=Hamburg" },
+    { "source": "/wetter/muenchen",    "destination": "/?city=München" },
+    { "source": "/wetter/frankfurt",   "destination": "/?city=Frankfurt" },
+    { "source": "/wetter/koeln",       "destination": "/?city=Köln" },
+    { "source": "/wetter/stuttgart",   "destination": "/?city=Stuttgart" },
+    { "source": "/wetter/duesseldorf", "destination": "/?city=Düsseldorf" },
+    { "source": "/wetter/leipzig",     "destination": "/?city=Leipzig" },
+    { "source": "/wetter/nuernberg",   "destination": "/?city=Nürnberg" },
+    { "source": "/wetter/bremen",      "destination": "/?city=Bremen" },
+    { "source": "/wetter/dresden",     "destination": "/?city=Dresden" },
+    { "source": "/wetter/hannover",    "destination": "/?city=Hannover" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options",    "value": "nosniff" },
+        { "key": "X-Frame-Options",           "value": "DENY" },
+        { "key": "X-XSS-Protection",          "value": "1; mode=block" },
+        { "key": "Referrer-Policy",           "value": "strict-origin-when-cross-origin" }
+      ]
+    },
+    {
+      "source": "/style.css",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=3600" }
+      ]
+    },
+    {
+      "source": "/script.js",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=3600" }
+      ]
+    }
+  ]
+}
