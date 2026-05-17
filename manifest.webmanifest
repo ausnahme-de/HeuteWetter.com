@@ -1,9 +1,0 @@
-{
-  "name": "Haute Wetter Deutschland",
-  "short_name": "Haute Wetter",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#f6f4ee",
-  "theme_color": "#0d6b75",
-  "icons": []
-}
